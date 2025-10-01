@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Ejercicio2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24D31A03-E456-4B0E-B22D-6FB0453A41EE}|Ejercicio2\\Ejercicio2.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\ejercicio2\\ejercicio2\\components\\pages\\saludo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D31A03-E456-4B0E-B22D-6FB0453A41EE}|Ejercicio2\\Ejercicio2.csproj|solutionrelative:ejercicio2\\components\\pages\\saludo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D31A03-E456-4B0E-B22D-6FB0453A41EE}|Ejercicio2\\Ejercicio2.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\ejercicio2\\ejercicio2\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D31A03-E456-4B0E-B22D-6FB0453A41EE}|Ejercicio2\\Ejercicio2.csproj|solutionrelative:ejercicio2\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D31A03-E456-4B0E-B22D-6FB0453A41EE}|Ejercicio2\\Ejercicio2.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\ejercicio2\\ejercicio2\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D31A03-E456-4B0E-B22D-6FB0453A41EE}|Ejercicio2\\Ejercicio2.csproj|solutionrelative:ejercicio2\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D31A03-E456-4B0E-B22D-6FB0453A41EE}|Ejercicio2\\Ejercicio2.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\ejercicio2\\ejercicio2\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24D31A03-E456-4B0E-B22D-6FB0453A41EE}|Ejercicio2\\Ejercicio2.csproj|solutionrelative:ejercicio2\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Ejercicio2\\Ejercicio2\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "Ejercicio2\\Components\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Ejercicio2\\Ejercicio2\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "Ejercicio2\\Components\\Pages\\Weather.razor",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T12:40:26.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Error.razor",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Ejercicio2\\Ejercicio2\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "Ejercicio2\\Components\\Pages\\Error.razor",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Ejercicio2\\Ejercicio2\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "Ejercicio2\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T12:41:27.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Saludo.razor",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Ejercicio2\\Ejercicio2\\Components\\Pages\\Saludo.razor",
+              "RelativeDocumentMoniker": "Ejercicio2\\Components\\Pages\\Saludo.razor",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Ejercicio2\\Ejercicio2\\Components\\Pages\\Saludo.razor",
+              "RelativeToolTip": "Ejercicio2\\Components\\Pages\\Saludo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T12:40:36.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Ejercicio2\\Ejercicio2\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Ejercicio2\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Ejercicio2\\Ejercicio2\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Ejercicio2\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-01T12:38:43.109Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
