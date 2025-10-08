@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{C92F7575-CF89-4B42-A6F2-4C48686336E3}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C92F7575-CF89-4B42-A6F2-4C48686336E3}|HelloWorld\\HelloWorld.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\helloworld\\helloworld\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{C92F7575-CF89-4B42-A6F2-4C48686336E3}|HelloWorld\\HelloWorld.csproj|C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\HelloWorld\\helloworld\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C92F7575-CF89-4B42-A6F2-4C48686336E3}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C92F7575-CF89-4B42-A6F2-4C48686336E3}|HelloWorld\\HelloWorld.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\helloworld\\helloworld\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{C92F7575-CF89-4B42-A6F2-4C48686336E3}|HelloWorld\\HelloWorld.csproj|C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\HelloWorld\\helloworld\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{C92F7575-CF89-4B42-A6F2-4C48686336E3}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -34,8 +34,7 @@
               "RelativeToolTip": "HelloWorld\\Content\\bootstrap.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-01T12:13:11.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-01T12:13:11.574Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "HelloWorld\\Default.aspx.cs",
               "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\HelloWorld\\HelloWorld\\Default.aspx.cs",
               "RelativeToolTip": "HelloWorld\\Default.aspx.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-01T12:04:14.738Z",
               "EditorCaption": ""
@@ -60,12 +59,7 @@
               "RelativeToolTip": "HelloWorld\\Default.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-10-01T11:53:28.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-10-01T11:53:28.119Z"
             }
           ]
         }

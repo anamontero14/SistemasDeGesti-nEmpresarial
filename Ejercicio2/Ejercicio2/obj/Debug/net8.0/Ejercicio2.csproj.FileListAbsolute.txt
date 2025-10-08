@@ -30,3 +30,4 @@ C:\Users\ana.montero\Documents\GitHub\SistemasDeGesti-nEmpresarial\Ejercicio2\Ej
 C:\Users\ana.montero\Documents\GitHub\SistemasDeGesti-nEmpresarial\Ejercicio2\Ejercicio2\obj\Debug\net8.0\Ejercicio2.pdb
 C:\Users\ana.montero\Documents\GitHub\SistemasDeGesti-nEmpresarial\Ejercicio2\Ejercicio2\obj\Debug\net8.0\Ejercicio2.genruntimeconfig.cache
 C:\Users\ana.montero\Documents\GitHub\SistemasDeGesti-nEmpresarial\Ejercicio2\Ejercicio2\obj\Debug\net8.0\ref\Ejercicio2.dll
+C:\Users\ana.montero\Documents\GitHub\SistemasDeGesti-nEmpresarial\Ejercicio2\Ejercicio2\obj\Debug\net8.0\Ejercicio2.sourcelink.json
