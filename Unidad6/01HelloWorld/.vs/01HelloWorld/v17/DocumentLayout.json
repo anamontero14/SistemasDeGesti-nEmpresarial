@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\01HelloWorld\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\01helloworld\\01helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|solutionrelative:01helloworld\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\01helloworld\\01helloworld\\views\\filete\\empanado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|solutionrelative:01helloworld\\views\\filete\\empanado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\01helloworld\\01helloworld\\controllers\\filetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|solutionrelative:01helloworld\\controllers\\filetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\01helloworld\\01helloworld\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|solutionrelative:01helloworld\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\01helloworld\\01helloworld\\views\\filete\\empanado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|solutionrelative:01helloworld\\views\\filete\\empanado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{302F60D1-59B1-422B-9DC8-A8B071FCADA0}|01HelloWorld\\01HelloWorld.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\01helloworld\\01helloworld\\views\\home\\ana.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,24 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\01HelloWorld\\01HelloWorld\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "01HelloWorld\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\01HelloWorld\\01HelloWorld\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "01HelloWorld\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-15T12:38:14.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Empanado.cshtml",
               "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\01HelloWorld\\01HelloWorld\\Views\\Filete\\Empanado.cshtml",
               "RelativeDocumentMoniker": "01HelloWorld\\Views\\Filete\\Empanado.cshtml",
               "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\01HelloWorld\\01HelloWorld\\Views\\Filete\\Empanado.cshtml",
               "RelativeToolTip": "01HelloWorld\\Views\\Filete\\Empanado.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-15T12:19:57.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FileteController.cs",
               "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\01HelloWorld\\01HelloWorld\\Controllers\\FileteController.cs",
               "RelativeDocumentMoniker": "01HelloWorld\\Controllers\\FileteController.cs",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Ana.cshtml",
               "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\01HelloWorld\\01HelloWorld\\Views\\Home\\Ana.cshtml",
               "RelativeDocumentMoniker": "01HelloWorld\\Views\\Home\\Ana.cshtml",
@@ -64,12 +81,11 @@
               "RelativeToolTip": "01HelloWorld\\Views\\Home\\Ana.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-15T12:13:13.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T12:13:13.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\01HelloWorld\\01HelloWorld\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "01HelloWorld\\Controllers\\HomeController.cs",
@@ -77,8 +93,7 @@
               "RelativeToolTip": "01HelloWorld\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T12:38:51.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T12:38:51.976Z"
             }
           ]
         }
