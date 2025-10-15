@@ -23,6 +23,14 @@ namespace _01HelloWorld.Controllers
             return View();
         }
 
+        public string Nose() {
+            return "Hello World";
+        }
+
+        public IActionResult Ana() {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
