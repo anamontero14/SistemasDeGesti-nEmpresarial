@@ -96,3 +96,12 @@ C:\Users\ana.montero\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01Hel
 C:\Users\ana.montero\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\01HelloWorld.genruntimeconfig.cache
 C:\Users\ana.montero\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\ref\01HelloWorld.dll
 C:\Users\ana.montero\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\compressed\76jqoi2fj8-b9sayid5wm.gz
+C:\Users\USUARIO\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\USUARIO\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\01HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\01HelloWorld.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\01HelloWorld.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\01HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\01HelloWorld.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USUARIO\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\01HelloWorld.RazorAssemblyInfo.cache
+C:\Users\USUARIO\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\01HelloWorld.RazorAssemblyInfo.cs
+C:\Users\USUARIO\Documents\GitHub\SistemasDeGesti-nEmpresarial\Unidad6\01HelloWorld\01HelloWorld\obj\Debug\net9.0\01HelloWorld.sourcelink.json

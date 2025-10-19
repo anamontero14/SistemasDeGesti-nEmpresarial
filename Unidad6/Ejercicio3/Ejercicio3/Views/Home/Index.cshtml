@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    var tabla = ViewData["Tabla"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">Tablas de multiplicar</h1>
+
+    @Html.Raw(ViewData["Tabla"])
+</div>
