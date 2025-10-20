@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\",
+  "WorkspaceRootPath": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{995A1383-6D2E-44B6-9B2A-59553F2164C2}|Ejercicio3\\Ejercicio3.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\ejercicio3\\ejercicio3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{995A1383-6D2E-44B6-9B2A-59553F2164C2}|Ejercicio3\\Ejercicio3.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\ejercicio3\\ejercicio3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{995A1383-6D2E-44B6-9B2A-59553F2164C2}|Ejercicio3\\Ejercicio3.csproj|solutionrelative:ejercicio3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{995A1383-6D2E-44B6-9B2A-59553F2164C2}|Ejercicio3\\Ejercicio3.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\ejercicio3\\ejercicio3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{995A1383-6D2E-44B6-9B2A-59553F2164C2}|Ejercicio3\\Ejercicio3.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\ejercicio3\\ejercicio3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{995A1383-6D2E-44B6-9B2A-59553F2164C2}|Ejercicio3\\Ejercicio3.csproj|solutionrelative:ejercicio3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{995A1383-6D2E-44B6-9B2A-59553F2164C2}|Ejercicio3\\Ejercicio3.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad6\\ejercicio3\\ejercicio3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{995A1383-6D2E-44B6-9B2A-59553F2164C2}|Ejercicio3\\Ejercicio3.csproj|solutionrelative:ejercicio3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,30 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Program.cs",
+              "RelativeDocumentMoniker": "Ejercicio3\\Program.cs",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Program.cs",
+              "RelativeToolTip": "Ejercicio3\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T11:25:23.023Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Ejercicio3\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Ejercicio3\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-19T18:36:51.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Ejercicio3\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad6\\Ejercicio3\\Ejercicio3\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Ejercicio3\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwBcAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T18:36:03.72Z",
               "EditorCaption": ""

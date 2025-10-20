@@ -1,12 +1,20 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 
-    var hora = ViewData["Hora"];
-    var periodo = ViewData["Periodo"];
+    var hora = DateTime.Now;
+    var periodo = "";
+    if (hora.Hour < 12)
+    {
+        periodo = "antes del medio día";
+    }
+    else
+    {
+        periodo = "después del medio día";    
+    }
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Hola son las: @hora</p>
+    <p>Hola son las: @hora.Hour:@hora.Minute</p>
     <p>Es @periodo</p>
 </div>
