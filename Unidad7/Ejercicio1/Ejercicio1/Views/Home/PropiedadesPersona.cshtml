@@ -1,0 +1,18 @@
+﻿@{
+    //almaceno a la persona 3 en la variable
+    var persona = ViewBag.persona3;
+}
+
+<div>
+    <h1>Datos de @persona.nombre</h1>
+
+    <p>
+        ID: @persona.ID<br />
+        Nombre: @persona.nombre<br />
+        Edad: @persona.edad
+    </p>
+
+    @Html.ActionLink("Ir a Index", "Index")
+    @Html.ActionLink("Ir a ListadoPersonas", "ListadoPersonas")
+
+</div>

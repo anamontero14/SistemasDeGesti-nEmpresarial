@@ -1,0 +1,29 @@
+﻿@{
+    //paso el viewbag a una lista de tipo CLSPersona
+    var listado = ViewData["ListadoPersonas"] as List<Ejercicio1.Models.Entities.CLSPersona>;
+}
+
+<div class="text-center">
+
+    <h1>Listado de personas</h1>
+
+    <table style="border-collapse: collapse; border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black; padding: 8px;">ID</th>
+            <th style="border: 1px solid black; padding: 8px;">NOMBRE</th>
+            <th style="border: 1px solid black; padding: 8px;">EDAD</th>
+        </tr>
+        @foreach (var persona in listado)
+        {
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">@persona.ID</td>
+                <td style="border: 1px solid black; padding: 8px;">@persona.nombre</td>
+                <td style="border: 1px solid black; padding: 8px;">@persona.edad</td>
+            </tr>
+        }
+    </table>
+
+    @Html.ActionLink("Ir a Index", "Index")
+    @Html.ActionLink("Ir a PropiedadesPersona", "PropiedadesPersona")
+
+</div>

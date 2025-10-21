@@ -48,6 +48,30 @@ namespace Ejercicio1.Controllers
             return View(objetoPersona);
         }
 
+        //controla la vista del listado de personas
+        public IActionResult ListadoPersonas()
+        {
+
+            //llamo a la funcion de listado personas y se la mando a la vista
+            ViewBag.ListadoPersonas = new CLSListadoPersonas().ObtenerListadoPersonas();
+
+            return View();
+        }
+
+        //controla la vista del listado de las propiedades de una persona especifica
+        public IActionResult PropiedadesPersona() {
+            //instancio un objeto de la clase listado personas
+            List<CLSPersona> listadoPersonas = new CLSListadoPersonas().ObtenerListadoPersonas();
+
+            //creo a la persona
+            CLSPersona persona3 = listadoPersonas[2];
+
+            //le mando a la vista la persona 3
+            ViewBag.persona3 = persona3;
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
