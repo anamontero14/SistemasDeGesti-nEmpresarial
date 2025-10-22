@@ -1,0 +1,43 @@
+﻿@model Ejercicio1.Models.ViewModels.Ejercicio1VM
+
+@{
+    //le paso el listado de personas y lo almaceno en una variable
+    var listadoDepartamentos = ViewBag.listadoDepartamentos as List<Ejercicio1.Models.Entities.CLSDepartamento>;
+}
+
+<div style="display: flex; justify-content: center; margin-top: 50px;">
+
+    <form action="" style="display: flex; flex-direction: column; gap: 15px; width: 300px; text-align: center;">
+
+        @Html.Label("Nombre")
+        @Html.TextBox("Nombre", Model.persona.nombre, new { style = "padding: 8px; border-radius: 4px; border: 1px solid #ccc; width: 100%;" })
+        <br />
+        @Html.Label("Edad")
+        @Html.TextBox("Edad", Model.persona.nombre, new { style = "padding: 8px; border-radius: 4px; border: 1px solid #ccc; width: 100%;" })
+        <br />
+        @Html.Label("Departamento")
+        <select id="departamento" name="departamento" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc; width: 100%;">
+            @foreach (var departamento in Model.departamentos)
+            {
+                //si el id del departamento actual es el mismo que el que se está recorriendo
+                if (departamento.IdDepartamento == Model.persona.departamentoId)
+                {
+                    //se queda seleccionado
+                    <option selected="selected" value=@departamento.IdDepartamento>@departamento.NombreDepartamento</option>
+                } else
+                {
+                    //si no es el mismo entonces no lo deja seleccionado
+                    <option value=@departamento.IdDepartamento>@departamento.NombreDepartamento</option>
+                }
+
+            }
+        </select>
+        <br />
+        <input type="submit" value="Enviar" style="padding: 10px; border: none; border-radius: 4px; background-color: #007BFF; color: white; font-weight: bold; cursor: pointer;" />
+
+    </form>
+
+    @Html.ActionLink("Ir a ListadoPersonas", "ListadoPersonas")
+    @Html.ActionLink("Ir a PropiedadesPersona", "PropiedadesPersona")
+
+</div>

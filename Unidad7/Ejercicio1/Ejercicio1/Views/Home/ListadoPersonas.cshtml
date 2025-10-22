@@ -1,14 +1,15 @@
 ﻿@{
     //paso el viewbag a una lista de tipo CLSPersona
+        //CAMBIAR CON MODEL
     var listado = ViewData["ListadoPersonas"] as List<Ejercicio1.Models.Entities.CLSPersona>;
 }
 
-<div class="text-center">
+<div style="text-align: center; font-family: Arial, sans-serif; margin-top: 40px;">
 
-    <h1>Listado de personas</h1>
+    <h1 style="margin-bottom: 20px;">Listado de personas</h1>
 
-    <table style="border-collapse: collapse; border: 1px solid black;">
-        <tr>
+    <table style="border-collapse: collapse; border: 1px solid black; margin: 0 auto; width: 60%;">
+        <tr style="background-color: #f2f2f2;">
             <th style="border: 1px solid black; padding: 8px;">ID</th>
             <th style="border: 1px solid black; padding: 8px;">NOMBRE</th>
             <th style="border: 1px solid black; padding: 8px;">EDAD</th>
@@ -23,7 +24,9 @@
         }
     </table>
 
-    @Html.ActionLink("Ir a Index", "Index")
-    @Html.ActionLink("Ir a PropiedadesPersona", "PropiedadesPersona")
+    <div style="margin-top: 20px; display: flex; justify-content: center; gap: 15px;">
+        @Html.ActionLink("Ir a Index", "Index", null, new { @style = "text-decoration: none; padding: 10px 15px; background-color: #007BFF; color: white; border-radius: 4px;" })
+        @Html.ActionLink("Ir a PropiedadesPersona", "PropiedadesPersona", null, new { @style = "text-decoration: none; padding: 10px 15px; background-color: #28A745; color: white; border-radius: 4px;" })
+    </div>
 
 </div>

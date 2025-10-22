@@ -1,8 +1,10 @@
 using System.Diagnostics;
 using Ejercicio1.Models;
 using Ejercicio1.Models.Entities;
+using Ejercicio1.Models.DAL;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Ejercicio1.Models.ViewModels;
 
 namespace Ejercicio1.Controllers
 {
@@ -23,7 +25,7 @@ namespace Ejercicio1.Controllers
             String mensaje = "";
 
             //instancio la entidad de persona
-            CLSPersona objetoPersona = new CLSPersona(1, "Juanito", 23);
+            CLSPersona objetoPersona = new CLSPersona(1, "Juanito", 23, 3);
 
             //almaceno dicha fecha en la variable
             fecha = DateTime.Now;
@@ -51,25 +53,22 @@ namespace Ejercicio1.Controllers
         //controla la vista del listado de personas
         public IActionResult ListadoPersonas()
         {
-
-            //llamo a la funcion de listado personas y se la mando a la vista
-            ViewBag.ListadoPersonas = new CLSListadoPersonas().ObtenerListadoPersonas();
-
-            return View();
+            //devuelve el listado de las personas
+            return View(CLSListadoPersonas.ObtenerListadoPersonas());
         }
 
         //controla la vista del listado de las propiedades de una persona especifica
         public IActionResult PropiedadesPersona() {
-            //instancio un objeto de la clase listado personas
-            List<CLSPersona> listadoPersonas = new CLSListadoPersonas().ObtenerListadoPersonas();
+            return View(CLSListadoPersonas.ObtenerPersonaPorPosicion(2));
+        }
 
-            //creo a la persona
-            CLSPersona persona3 = listadoPersonas[2];
+        //devuelve una persona aleatoria
+        public IActionResult PersonaAzar() {
 
-            //le mando a la vista la persona 3
-            ViewBag.persona3 = persona3;
-
-            return View();
+            Ejercicio1VM vm = new Ejercicio1VM();
+            
+            //le mando la persona directamente a la vista
+            return View(vm);
         }
 
         public IActionResult Privacy()

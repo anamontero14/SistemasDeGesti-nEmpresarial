@@ -9,13 +9,23 @@ namespace Ejercicio1.Models.Entities
         private int _id;
         private String _nombre = "";
         private int _edad;
+        private int _departamentoID;
         #endregion
 
         //constructor
-        public CLSPersona(int id, string nombre, int edad) { 
+        public CLSPersona(int id, string nombre, int edad, int departamentoId) { 
             _id = id;
             _nombre = nombre;
             _edad = edad;
+            _departamentoID = departamentoId;
+        }
+
+        public CLSPersona(int id, string nombre, int edad)
+        {
+            _id = id;
+            _nombre = nombre;
+            _edad = edad;
+            _departamentoID = 0;
         }
 
 
@@ -44,6 +54,17 @@ namespace Ejercicio1.Models.Entities
         public int edad {
             get {
                 return _edad;
+            }
+        }
+
+        //método get y set para el id del departamento en el que está la persona
+        public int departamentoId {
+            get {
+                return _departamentoID;
+            }
+
+            set { 
+                _departamentoID = value;
             }
         }
         #endregion
