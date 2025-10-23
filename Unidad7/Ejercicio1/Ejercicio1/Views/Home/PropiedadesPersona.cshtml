@@ -1,15 +1,12 @@
-﻿@{
-    //almaceno a la persona 3 en la variable
-    var persona = ViewBag.persona3;
-}
+﻿@model Ejercicio1.Models.Entities.CLSPersona;
 
 <div>
-    <h1>Datos de @persona.nombre</h1>
+    <h1>Datos de Model.nombre</h1>
 
     <p>
-        ID: @persona.ID<br />
-        Nombre: @persona.nombre<br />
-        Edad: @persona.edad
+        ID: Model.ID<br />
+        Nombre: Model.nombre<br />
+        Edad: Model.edad
     </p>
 
     @Html.ActionLink("Ir a Index", "Index")

@@ -19,5 +19,6 @@ namespace Ejercicio1.Models.DAL
                 new CLSDepartamento(5, "Departamento 5")
             };
         }
+
     }
 }

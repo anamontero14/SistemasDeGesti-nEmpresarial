@@ -1,8 +1,4 @@
-﻿@{
-    //paso el viewbag a una lista de tipo CLSPersona
-        //CAMBIAR CON MODEL
-    var listado = ViewData["ListadoPersonas"] as List<Ejercicio1.Models.Entities.CLSPersona>;
-}
+﻿@model List<Ejercicio1.Models.Entities.CLSPersona>;
 
 <div style="text-align: center; font-family: Arial, sans-serif; margin-top: 40px;">
 
@@ -14,7 +10,7 @@
             <th style="border: 1px solid black; padding: 8px;">NOMBRE</th>
             <th style="border: 1px solid black; padding: 8px;">EDAD</th>
         </tr>
-        @foreach (var persona in listado)
+        @foreach (var persona in Model)
         {
             <tr>
                 <td style="border: 1px solid black; padding: 8px;">@persona.ID</td>

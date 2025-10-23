@@ -4,6 +4,7 @@ namespace Ejercicio1.Models.DAL
 {
     public class CLSListadoPersonas
     {
+
         /// <summary>
         /// Permite obtener una lista de todas las personas
         /// pre: none

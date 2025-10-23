@@ -53,21 +53,29 @@ namespace Ejercicio1.Controllers
         //controla la vista del listado de personas
         public IActionResult ListadoPersonas()
         {
+            //en una variable almaceno la lista de personas que se pasa desde la clase CLSListadoPersonas
+            List<CLSPersona> lista = CLSListadoPersonas.ObtenerListadoPersonas();
+
             //devuelve el listado de las personas
-            return View(CLSListadoPersonas.ObtenerListadoPersonas());
+            return View(lista);
         }
 
         //controla la vista del listado de las propiedades de una persona especifica
         public IActionResult PropiedadesPersona() {
-            return View(CLSListadoPersonas.ObtenerPersonaPorPosicion(2));
+
+            //creo una variable llamada persona a la que le igualo lo que devuelva
+            //el metodo obtener persona por posicion
+            CLSPersona persona = CLSListadoPersonas.ObtenerPersonaPorPosicion(2);
+
+            return View(persona);
         }
 
         //devuelve una persona aleatoria
         public IActionResult PersonaAzar() {
 
             Ejercicio1VM vm = new Ejercicio1VM();
-            
-            //le mando la persona directamente a la vista
+
+            //le mando la persona que el vm agarra aleatoriamente de la lista de las personas
             return View(vm);
         }
 
