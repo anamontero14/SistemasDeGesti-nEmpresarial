@@ -25,23 +25,6 @@ namespace Ejercicio1.Models.ViewModels
             _departamentos = CLSListadoDepartamentos.ObtenerListadoDepartamentos();
         }
 
-        #region GETTERS Y SETTERS 
-        public CLSPersona persona {
-            get { 
-                return _persona;
-            }
-            set { 
-                _persona = value;
-            }
-        }
-
-        public List<CLSDepartamento> departamentos {
-            get {
-                return _departamentos;
-            }
-        }
-        #endregion
-
         /// <summary>
         /// Método al que le llegará una posición para agarrar a una persona
         /// de la lista que crea y almacena en una variable llamando a la clase
@@ -62,6 +45,25 @@ namespace Ejercicio1.Models.ViewModels
             //y el departamento es igualado a la lista de los departamentos
             _departamentos = CLSListadoDepartamentos.ObtenerListadoDepartamentos();
         }
+
+
+        #region GETTERS Y SETTERS 
+        public CLSPersona persona
+        {
+            get
+            {
+                return _persona;
+            }
+        }
+
+        public List<CLSDepartamento> departamentos
+        {
+            get
+            {
+                return _departamentos;
+            }
+        }
+        #endregion
 
     }
 }
