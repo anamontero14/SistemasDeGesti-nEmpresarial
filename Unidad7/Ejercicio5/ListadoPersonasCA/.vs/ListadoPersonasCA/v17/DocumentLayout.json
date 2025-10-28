@@ -1,26 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\",
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CF5161C-A57E-4415-885E-1C536F3B9C55}|UI\\UI.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{3CF5161C-A57E-4415-885E-1C536F3B9C55}|UI\\UI.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3CF5161C-A57E-4415-885E-1C536F3B9C55}|UI\\UI.csproj|solutionrelative:ui\\ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{3CF5161C-A57E-4415-885E-1C536F3B9C55}|UI\\UI.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\ui\\viewmodels\\personavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF5161C-A57E-4415-885E-1C536F3B9C55}|UI\\UI.csproj|solutionrelative:ui\\viewmodels\\personavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|solutionrelative:data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CF5161C-A57E-4415-885E-1C536F3B9C55}|UI\\UI.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CF5161C-A57E-4415-885E-1C536F3B9C55}|UI\\UI.csproj|solutionrelative:ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|solutionrelative:domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CF5161C-A57E-4415-885E-1C536F3B9C55}|UI\\UI.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\ui\\views\\personav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3CF5161C-A57E-4415-885E-1C536F3B9C55}|UI\\UI.csproj|solutionrelative:ui\\views\\personav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\domain\\usecases\\personarepositoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\personarepositoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\domain\\interfaces\\ipersonarepositoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\ipersonarepositoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\domain\\repositories\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|solutionrelative:domain\\repositories\\ipersonarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\data\\repositories\\personarepositoryempty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|solutionrelative:data\\repositories\\personarepositoryempty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\data\\repositories\\personarepository100.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|solutionrelative:data\\repositories\\personarepository100.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\data\\repositories\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32581ACF-FF15-4465-B138-B5C0F235E5CC}|Data\\Data.csproj|solutionrelative:data\\repositories\\personarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\ejercicio5\\listadopersonasca\\domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F42048E0-4759-4074-8675-C430993D937E}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonaVM.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\ViewModels\\PersonaVM.cs",
+              "RelativeDocumentMoniker": "UI\\ViewModels\\PersonaVM.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\ViewModels\\PersonaVM.cs",
+              "RelativeToolTip": "UI\\ViewModels\\PersonaVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T19:04:26.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Domain",
-              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Domain.csproj",
-              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Domain.csproj",
-              "RelativeToolTip": "Domain\\Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "UI",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\UI.csproj",
+              "RelativeDocumentMoniker": "UI\\UI.csproj",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\UI.csproj",
+              "RelativeToolTip": "UI\\UI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T13:22:43.426Z",
+              "WhenOpened": "2025-10-28T18:59:25.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Data",
-              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Data.csproj",
-              "RelativeDocumentMoniker": "Data\\Data.csproj",
-              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Data.csproj",
-              "RelativeToolTip": "Data\\Data.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T13:21:54.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UI",
-              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\UI.csproj",
-              "RelativeDocumentMoniker": "UI\\UI.csproj",
-              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\UI.csproj",
-              "RelativeToolTip": "UI\\UI.csproj",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UI\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-27T13:21:28.501Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T19:03:09.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Class1.cs",
-              "RelativeDocumentMoniker": "Data\\Class1.cs",
-              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Class1.cs",
-              "RelativeToolTip": "Data\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T13:19:43.406Z",
+              "Title": "PersonaV.cshtml",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\Views\\PersonaV.cshtml",
+              "RelativeDocumentMoniker": "UI\\Views\\PersonaV.cshtml",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\UI\\Views\\PersonaV.cshtml",
+              "RelativeToolTip": "UI\\Views\\PersonaV.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-28T19:02:44.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Class1.cs",
-              "RelativeDocumentMoniker": "Domain\\Class1.cs",
-              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Class1.cs",
-              "RelativeToolTip": "Domain\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PersonaRepositoryUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\UseCases\\PersonaRepositoryUseCase.cs",
+              "RelativeDocumentMoniker": "Domain\\UseCases\\PersonaRepositoryUseCase.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\UseCases\\PersonaRepositoryUseCase.cs",
+              "RelativeToolTip": "Domain\\UseCases\\PersonaRepositoryUseCase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T13:19:16.638Z",
+              "WhenOpened": "2025-10-28T18:57:01.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPersonaRepositoryUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Interfaces\\IPersonaRepositoryUseCase.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IPersonaRepositoryUseCase.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Interfaces\\IPersonaRepositoryUseCase.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IPersonaRepositoryUseCase.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:54:30.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Repositories\\IPersonaRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Repositories\\IPersonaRepository.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Repositories\\IPersonaRepository.cs",
+              "RelativeToolTip": "Domain\\Repositories\\IPersonaRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:48:21.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PersonaRepositoryEmpty.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Repositories\\PersonaRepositoryEmpty.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\PersonaRepositoryEmpty.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Repositories\\PersonaRepositoryEmpty.cs",
+              "RelativeToolTip": "Data\\Repositories\\PersonaRepositoryEmpty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:46:28.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PersonaRepository100.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Repositories\\PersonaRepository100.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\PersonaRepository100.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Repositories\\PersonaRepository100.cs",
+              "RelativeToolTip": "Data\\Repositories\\PersonaRepository100.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:43:52.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PersonaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Repositories\\PersonaRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\PersonaRepository.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Data\\Repositories\\PersonaRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\PersonaRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:19:07.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Entities\\Persona.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Persona.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\Ejercicio5\\ListadoPersonasCA\\Domain\\Entities\\Persona.cs",
+              "RelativeToolTip": "Domain\\Entities\\Persona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T18:09:39.207Z",
               "EditorCaption": ""
             }
           ]
