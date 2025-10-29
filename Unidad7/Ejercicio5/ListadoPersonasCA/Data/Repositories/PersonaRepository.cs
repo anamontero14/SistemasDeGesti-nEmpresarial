@@ -3,7 +3,7 @@ using Domain.Repositories;
 
 namespace Data.Repositories
 {
-    internal class PersonaRepository : IPersonaRepository
+    public class PersonaRepository : IPersonaRepository
     {
         /// <summary>
         /// Método sin parámetros que se encarga de simular una llamada
@@ -32,7 +32,7 @@ namespace Data.Repositories
         /// Método que sirve para devolver un listado de personas
         /// </summary>
         /// <returns></returns>
-        public List<Persona> getListaPersona() {
+        public List<Persona> getListaPersonas() {
             return ListaPersonas();
         }
     }

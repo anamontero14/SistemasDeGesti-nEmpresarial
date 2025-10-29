@@ -3,7 +3,7 @@ using Domain.Repositories;
 
 namespace Data.Repositories
 {
-    internal class PersonaRepositoryEmpty : IPersonaRepository
+    class PersonaRepositoryEmpty : IPersonaRepository
     {
         /// <summary>
         /// Método sin parámetros que se encarga de simular una llamada

@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using UI.Models;
 
@@ -13,9 +14,9 @@ namespace UI.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromServices] IPersonaRepositoryUseCase casoDeUso)
         {
-            return View();
+            return View(casoDeUso.getListaPersonas());
         }
 
         public IActionResult Privacy()

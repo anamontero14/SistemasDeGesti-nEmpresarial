@@ -12,7 +12,7 @@ namespace Domain.Interfaces
     /// al view model acceder a sus métodos el cuál consistirá en mandarle
     /// una lista
     /// </summary>
-    internal interface IPersonaRepositoryUseCase
+    public interface IPersonaRepositoryUseCase
     {
         public List<Persona> getListaPersonas();
     }
