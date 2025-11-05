@@ -34,8 +34,7 @@
               "RelativeToolTip": "Ejercicio1\\Views\\Home\\Saludo.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-05T07:22:38.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T07:22:38.903Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "Ejercicio1\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\Ejercicio1\\Ejercicio1\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Ejercicio1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-03T13:25:46.509Z",
               "EditorCaption": ""
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Ejercicio1\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAgwBEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T13:24:41.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T13:24:41.872Z"
             }
           ]
         }

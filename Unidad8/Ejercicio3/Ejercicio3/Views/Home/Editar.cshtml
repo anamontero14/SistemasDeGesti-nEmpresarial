@@ -1,0 +1,27 @@
+﻿@model Ejercicio3.Models.CLSPersona
+
+<div class="text-center">
+    <h1 class="display-4">Vista editar</h1>
+
+    <form method="post" action="">
+
+        <label>Nombre: </label>
+        <input type="text" name="nombre" value="@Model.nombre" />
+        <br />
+
+        <label>Apellido: </label>
+        <input type="text" name="apellido" value="@Model.apellido" />
+        <br />
+
+        <label>Edad: </label>
+        <input type="text" name="edad" value="@Model.edad" />
+        <br />
+
+        <input type="submit" value="Enviar" />
+
+    </form>
+
+    @Html.ActionLink("Ir a PersonaModificada", "PersonaModificada", "Home")
+
+</div>
+

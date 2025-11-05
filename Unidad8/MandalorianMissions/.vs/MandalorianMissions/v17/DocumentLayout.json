@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\MandalorianMissions\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F83A5D75-5CFD-40BD-83BB-D7A71F816B46}|DOMAIN\\DOMAIN\\DOMAIN.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad8\\mandalorianmissions\\domain\\domain\\entities\\misiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F83A5D75-5CFD-40BD-83BB-D7A71F816B46}|DOMAIN\\DOMAIN\\DOMAIN.csproj|solutionrelative:domain\\domain\\entities\\misiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83A5D75-5CFD-40BD-83BB-D7A71F816B46}|DOMAIN\\DOMAIN\\DOMAIN.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad8\\mandalorianmissions\\domain\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F83A5D75-5CFD-40BD-83BB-D7A71F816B46}|DOMAIN\\DOMAIN\\DOMAIN.csproj|solutionrelative:domain\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Misiones.cs",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\MandalorianMissions\\DOMAIN\\DOMAIN\\ENTITIES\\Misiones.cs",
+              "RelativeDocumentMoniker": "DOMAIN\\DOMAIN\\ENTITIES\\Misiones.cs",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\MandalorianMissions\\DOMAIN\\DOMAIN\\ENTITIES\\Misiones.cs",
+              "RelativeToolTip": "DOMAIN\\DOMAIN\\ENTITIES\\Misiones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T12:35:12.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DOMAIN",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\MandalorianMissions\\DOMAIN\\DOMAIN\\DOMAIN.csproj",
+              "RelativeDocumentMoniker": "DOMAIN\\DOMAIN\\DOMAIN.csproj",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\MandalorianMissions\\DOMAIN\\DOMAIN\\DOMAIN.csproj",
+              "RelativeToolTip": "DOMAIN\\DOMAIN\\DOMAIN.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-05T12:34:38.4Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
