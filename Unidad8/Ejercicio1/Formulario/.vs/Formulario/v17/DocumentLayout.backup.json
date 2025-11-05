@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\Ejercicio1\\Formulario\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B35D5454-380B-45F8-97A8-49E78AAB3008}|Formulario\\Formulario.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad8\\ejercicio1\\formulario\\formulario\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B35D5454-380B-45F8-97A8-49E78AAB3008}|Formulario\\Formulario.csproj|solutionrelative:formulario\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B35D5454-380B-45F8-97A8-49E78AAB3008}|Formulario\\Formulario.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad8\\ejercicio1\\formulario\\formulario\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B35D5454-380B-45F8-97A8-49E78AAB3008}|Formulario\\Formulario.csproj|solutionrelative:formulario\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B35D5454-380B-45F8-97A8-49E78AAB3008}|Formulario\\Formulario.csproj|c:\\users\\ana.montero\\documents\\github\\sistemasdegesti-nempresarial\\unidad8\\ejercicio1\\formulario\\formulario\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B35D5454-380B-45F8-97A8-49E78AAB3008}|Formulario\\Formulario.csproj|solutionrelative:formulario\\models\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\Ejercicio1\\Formulario\\Formulario\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Formulario\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\Ejercicio1\\Formulario\\Formulario\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Formulario\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T13:11:24.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\Ejercicio1\\Formulario\\Formulario\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Formulario\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\Ejercicio1\\Formulario\\Formulario\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Formulario\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-03T13:08:49.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Persona.cs",
+              "DocumentMoniker": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\Ejercicio1\\Formulario\\Formulario\\Models\\Persona.cs",
+              "RelativeDocumentMoniker": "Formulario\\Models\\Persona.cs",
+              "ToolTip": "C:\\Users\\ana.montero\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad8\\Ejercicio1\\Formulario\\Formulario\\Models\\Persona.cs",
+              "RelativeToolTip": "Formulario\\Models\\Persona.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T13:05:46.953Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

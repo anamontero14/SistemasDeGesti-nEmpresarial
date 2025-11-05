@@ -10,7 +10,7 @@ namespace Data.Repositories
         /// a una API o BBDD.
         /// </summary>
         /// <returns>Una lista con 100 personas</returns>
-        public List<Persona> ListaPersonas100()
+        private List<Persona> ListaPersonas100()
         {
             #region RETURN CON 100 PERSONAS
             return [

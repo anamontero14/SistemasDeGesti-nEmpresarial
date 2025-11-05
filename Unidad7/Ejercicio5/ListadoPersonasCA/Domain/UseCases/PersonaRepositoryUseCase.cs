@@ -1,23 +1,33 @@
 ﻿using Domain.Entities;
 using Domain.Interfaces;
+using Domain.Repositories;
 
 namespace Domain.UseCases
 {
     public class PersonaRepositoryUseCase : IPersonaRepositoryUseCase
     {
-        public List<Persona> getListaPersonas() {
-            //creo e inicializo una lista de personas que contendrá solo a personas mayores de edad
-            List<Persona> listaPersonasMayoresEdad = new List<Persona>(); ;
+        //instancia un objeto de tipo de la interfaz persona repository privado
+        private readonly IPersonaRepository _listaPersonaRepository;
 
-            //se inyecta la interfaz IPersonaRepository y se itera sobre el listado
-            foreach (Persona persona in getListaPersonas()) {
-                if (persona.Edad >= 18) { 
-                    listaPersonasMayoresEdad.Add(persona);
+        //el constructor obtendrá un objeto de persona repository que será igualada
+        //al objeto creado
+        public PersonaRepositoryUseCase(IPersonaRepository personaRepository) { 
+            _listaPersonaRepository = personaRepository;
+        }
+
+        public List<Persona> getListaPersonas() {
+            //se crea una nueva lista de personas
+            List<Persona> personasFiltradas = new List<Persona>();
+
+            //se itera sobre el listado de las personas
+            foreach (Persona persona in _listaPersonaRepository.getListaPersonas()) {
+                if (persona.Edad >= 18) {
+                    personasFiltradas.Add(persona);
                 }
             }
 
             //retorna la lista de las personas filtrada
-            return listaPersonasMayoresEdad;
+            return personasFiltradas;
 
         }
     }

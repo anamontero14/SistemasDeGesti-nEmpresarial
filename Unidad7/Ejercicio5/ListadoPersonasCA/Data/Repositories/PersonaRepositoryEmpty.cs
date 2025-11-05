@@ -10,7 +10,7 @@ namespace Data.Repositories
         /// a una API o BBDD. ç
         /// </summary>
         /// <returns>Una lista vacía</returns>
-        public List<Persona> ListaPersonasEmpty()
+        private List<Persona> ListaPersonasEmpty()
         {
 
             return [];
