@@ -1,7 +1,8 @@
-using System.Diagnostics;
 using Domain.Entities;
 using Ejercicio1.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Ejercicio1.Controllers
 {
@@ -14,8 +15,9 @@ namespace Ejercicio1.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string nombre)
         {
+            ViewBag.nombre = nombre;
             return View();
         }
 
