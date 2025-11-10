@@ -1,7 +1,12 @@
+using CONTAINER;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//añado esto
+builder.Services.AddCompositionRoot(builder.Configuration);
 
 var app = builder.Build();
 
