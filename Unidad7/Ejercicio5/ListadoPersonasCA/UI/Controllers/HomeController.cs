@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Domain.Entities;
 using Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using UI.Models;
@@ -16,6 +17,9 @@ namespace UI.Controllers
 
         public IActionResult Index([FromServices] IPersonaRepositoryUseCase casoDeUso)
         {
+
+            List<Persona> listaPersona = casoDeUso.getListaPersonas(); 
+
             return View(casoDeUso.getListaPersonas());
         }
 
