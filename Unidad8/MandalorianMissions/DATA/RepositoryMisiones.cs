@@ -33,5 +33,29 @@ namespace DATA
         {
             return ListaMisiones();
         }
+
+        /// <summary>
+        /// Método que encuentra una misión por el ID que se le pasa
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Mision getMisionPorId(int id) {
+            //creo un objeto misión para guardar la misión que encuentre
+            //en la lista la cual su id sea el mismo que el que le llega por parámetros
+            Mision misionEncontrada = new Mision(); 
+
+            //con un bucle se recorre la lista de las misiones
+            foreach (var mision in ListaMisiones())
+            {
+                //si el id de la mision actual es igual al id que le entra por
+                //parámetro de entrada
+                if (mision.ID == id) {
+                    //iguala la variable que se devolverá a la misión que se ha encontrado
+                    misionEncontrada = mision;
+                }
+            }
+            //se returna la mision encontrada
+            return misionEncontrada;
+        }
     }
 }

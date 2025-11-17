@@ -14,7 +14,7 @@ namespace CompositionRoot
         public static IServiceCollection AddCompositionRoot(this IServiceCollection services, IConfiguration configuration)
         {
             //registra esos repositorios con su clase
-            services.AddScoped<IPersonaRepository, PersonaRepository>();
+            services.AddScoped<IPersonaRepository, PersonasRepositoryAzure>();
             services.AddScoped<IPersonaRepositoryUseCase, PersonaRepositoryUseCase>();
 
             return services;

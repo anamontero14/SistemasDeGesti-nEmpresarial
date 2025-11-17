@@ -20,11 +20,7 @@ namespace DOMAIN.USECASES
             _listaMisionesRepository = misionRepository;
         }
         public List<Mision> getListaMisionesFiltradas() { 
-        
-
-        }
-
-        public Mision getMisionPorID(int id) { 
+            
         }
     }
 }

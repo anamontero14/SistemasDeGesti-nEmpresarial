@@ -18,8 +18,6 @@ namespace UI.Controllers
         public IActionResult Index([FromServices] IPersonaRepositoryUseCase casoDeUso)
         {
 
-            List<Persona> listaPersona = casoDeUso.getListaPersonas(); 
-
             return View(casoDeUso.getListaPersonas());
         }
 

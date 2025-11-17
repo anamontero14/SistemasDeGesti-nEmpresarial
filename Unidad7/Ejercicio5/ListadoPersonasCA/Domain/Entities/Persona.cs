@@ -12,8 +12,11 @@ namespace Domain.Entities
 
         private int _id;
         private string _nombre;
-        private string _apellido;
+        private string _apellidos;
         private int _edad;
+        private DateTime _fechaNacimiento;
+        private string _direccion;
+        private string _telefono;
 
         #endregion
 
@@ -22,13 +25,16 @@ namespace Domain.Entities
         /// </summary>
         /// <param name="id"></param>
         /// <param name="nombre"></param>
-        /// <param name="apellido"></param>
+        /// <param name="apellidos"></param>
         /// <param name="edad"></param>
-        public Persona(int id, string nombre, string apellido, int edad) {
+        public Persona(int id, string nombre, string apellidos, int edad, DateTime fechaNacimiento, string direccion, string telefono) { 
             this._id = id;
             this._nombre = nombre;
-            this._apellido = apellido;
+            this._apellidos = apellidos;
             this._edad = edad;
+            this._fechaNacimiento = fechaNacimiento;
+            this._direccion = direccion;
+            this._telefono = telefono;
         }
 
         /// <summary>
@@ -44,6 +50,9 @@ namespace Domain.Entities
             {
                 return _id;
             }
+            set {
+                _id = value;
+            }
         }
 
         public string Nombre {
@@ -55,12 +64,12 @@ namespace Domain.Entities
             }
         }
 
-        public string Apellido {
+        public string Apellidos {
             get {
-                return _apellido;
+                return _apellidos;
             }
             set { 
-                _apellido = value;
+                _apellidos = value;
             }
         }
 
@@ -70,6 +79,39 @@ namespace Domain.Entities
             }
             set { 
                 _edad = value;
+            }
+        }
+
+        public DateTime FechaNacimiento {
+            get {
+                return _fechaNacimiento;
+            }
+            set { 
+                _fechaNacimiento = value;  
+            }
+        }
+
+        public string Direccion
+        {
+            get
+            {
+                return _direccion;
+            }
+            set
+            {
+                _direccion = value;
+            }
+        }
+
+        public string Telefono
+        {
+            get
+            {
+                return _telefono;
+            }
+            set
+            {
+                _telefono = value;
             }
         }
 

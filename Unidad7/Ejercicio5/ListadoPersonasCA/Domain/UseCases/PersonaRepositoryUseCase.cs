@@ -21,7 +21,7 @@ namespace Domain.UseCases
 
             //se itera sobre el listado de las personas
             foreach (Persona persona in _listaPersonaRepository.getListaPersonas()) {
-                if (persona.Edad >= 18) {
+                if (persona.Edad <= 18) {
                     personasFiltradas.Add(persona);
                 }
             }

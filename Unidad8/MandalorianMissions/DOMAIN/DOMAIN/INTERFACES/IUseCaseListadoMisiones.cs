@@ -14,11 +14,12 @@ namespace DOMAIN.INTERFACES
         /// </summary>
         /// <returns></returns>
         public List<Mision> getListaMisionesFiltradas();
+
         /// <summary>
-        /// Coge una misión por el id
+        /// Método que devuelve una misión que se ha encontrado por su id
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public Mision getMisionPorID(int id);
+        public Mision getMisionPorId(int id);
     }
 }
