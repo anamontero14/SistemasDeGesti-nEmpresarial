@@ -12,13 +12,18 @@ namespace UI.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
-            _logger = logger;
+            
         }
 
         public IActionResult Index([FromServices] IPersonaRepositoryUseCase casoDeUso)
         {
 
             return View(casoDeUso.getListaPersonas());
+        }
+        
+        //action de vista detalles que se le manda un id de la persona a mostrar
+        public IActionResult Details(int id) { 
+            return View();
         }
 
         public IActionResult Privacy()
