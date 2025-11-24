@@ -8,7 +8,7 @@ namespace Data.DataBase
 {
     internal class Connection
     {
-        public static String getConnectionString() {
+        public static string getConnectionString() {
            return "server=montero.database.windows.net;database=PersonaDB;uid=prueba;pwd=.1234abcde;trustServerCertificate = true;";
         }
     }
