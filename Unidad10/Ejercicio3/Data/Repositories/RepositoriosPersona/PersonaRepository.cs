@@ -1,7 +1,7 @@
 ﻿using Domain.Entities;
 using Domain.Interfaces.Repositories;
 
-namespace Data.Repositories
+namespace Data.Repositories.RepositoriosPersona
 {
     public class PersonaRepository : IPersonaRepository
     {

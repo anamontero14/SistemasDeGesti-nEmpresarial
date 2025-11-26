@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Domain.Entities
+{
+    public class Departamento
+    {
+        #region ATRIBUTOS
+        private int _id;
+        private string _nombre;
+        #endregion
+
+        #region CONSTRUCTORES
+        /// <summary>
+        /// Constructor con todos los atributos de la clase
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="nombre"></param>
+        public Departamento(int id, string nombre) { 
+            _id = id;
+            _nombre = nombre;
+        }
+
+        /// <summary>
+        /// Constructor vacío
+        /// </summary>
+        public Departamento() { }
+        #endregion
+
+        #region GETTERS Y SETTERS
+        public int ID
+        {
+            get
+            {
+                return _id;
+            }
+            set
+            {
+                _id = value;
+            }
+        }
+
+        public string nombre
+        {
+            get
+            {
+                return _nombre;
+            }
+            set
+            {
+                _nombre = value;
+            }
+        }
+        #endregion
+    }
+}

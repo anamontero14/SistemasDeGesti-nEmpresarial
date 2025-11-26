@@ -17,6 +17,8 @@ namespace Domain.Entities
         private DateTime _fechaNacimiento;
         private string _direccion;
         private string _telefono;
+        private int _idDepartamento;
+        private string _foto;
 
         #endregion
 
@@ -27,14 +29,16 @@ namespace Domain.Entities
         /// <param name="nombre"></param>
         /// <param name="apellidos"></param>
         /// <param name="edad"></param>
-        public Persona(int id, string nombre, string apellidos, int edad, DateTime fechaNacimiento, string direccion, string telefono) { 
-            this._id = id;
-            this._nombre = nombre;
-            this._apellidos = apellidos;
-            this._edad = edad;
-            this._fechaNacimiento = fechaNacimiento;
-            this._direccion = direccion;
-            this._telefono = telefono;
+        public Persona(int id, string nombre, string apellidos, int edad, DateTime fechaNacimiento, string direccion, string telefono, int idDepartamento, string foto) { 
+            _id = id;
+            _nombre = nombre;
+            _apellidos = apellidos;
+            _edad = edad;
+            _fechaNacimiento = fechaNacimiento;
+            _direccion = direccion;
+            _telefono = telefono;
+            _idDepartamento = idDepartamento;
+            _foto = foto;
         }
 
         /// <summary>
@@ -115,6 +119,29 @@ namespace Domain.Entities
             }
         }
 
+        public string Foto
+        {
+            get
+            {
+                return _foto;
+            }
+            set
+            {
+                _foto = value;
+            }
+        }
+
+        public int IDDepartamento
+        {
+            get
+            {
+                return _idDepartamento;
+            }
+            set
+            {
+                _idDepartamento = value;
+            }
+        }
         #endregion
     }
 }

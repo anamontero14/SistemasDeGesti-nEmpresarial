@@ -21,5 +21,34 @@ namespace Domain.Interfaces.Repositories
         /// </summary>
         /// <returns></returns>
         public List<Persona> getListaPersonas();
+
+        /// <summary>
+        /// devuelve una persona específica que proviene de la BBDD
+        /// </summary>
+        /// <param name="idPersona"></param>
+        /// <returns></returns>
+        public Persona getPersonaPorId(int idPersona);
+
+        /// <summary>
+        /// Método que crea una nueva persona
+        /// </summary>
+        /// <param name="personaNueva"></param>
+        /// <returns></returns>
+        public int crearPersona(Persona personaNueva);
+
+        /// <summary>
+        /// Método que actualiza una persona
+        /// </summary>
+        /// <param name="idPersona"></param>
+        /// <param name="persona"></param>
+        /// <returns></returns>
+        public int actualizarPersona(int idPersona, Persona persona);
+
+        /// <summary>
+        /// Método que elimina una persona
+        /// </summary>
+        /// <param name="idPersona"></param>
+        /// <returns></returns>
+        public int eliminarPersona(int idPersona);
     }
 }

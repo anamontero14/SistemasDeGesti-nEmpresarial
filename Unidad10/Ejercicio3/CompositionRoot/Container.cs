@@ -1,9 +1,9 @@
-﻿using Data.Repositories;
-using Domain.Interfaces.UseCase;
+﻿using Domain.Interfaces.UseCase;
 using Domain.Interfaces.Repositories;
 using Domain.UseCases;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Data.Repositories.RepositoriosPersona;
 
 namespace CompositionRoot
 {
