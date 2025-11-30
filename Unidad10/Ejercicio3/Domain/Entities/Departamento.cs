@@ -43,7 +43,7 @@ namespace Domain.Entities
             }
         }
 
-        public string nombre
+        public string Nombre
         {
             get
             {

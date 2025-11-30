@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,19 @@ namespace Domain.DTOs
 {
     public class PersonaConListadoDepartamento
     {
-        //Atributo que representa a la persona con todos sus atributos correspondientes
+        //persona
         public Persona persona { get; }
-        //Lista de todos los departamentos
-        //public List<Departamento>
+        //listado de los departamentos
+        public List<Departamento> departamentos { get; }
+
+        /// <summary>
+        /// Constructor del DTO que asigna valores a los atributos
+        /// </summary>
+        /// <param name="persona"></param>
+        /// <param name="listadoDepartamentos"></param>
+        public PersonaConListadoDepartamento(Persona persona, List<Departamento> listadoDepartamentos) {
+            this.persona = persona;
+            departamentos = listadoDepartamentos;
+        }
     }
 }

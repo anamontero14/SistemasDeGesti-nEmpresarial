@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3C62D2CE-31B2-4B60-A00A-695A336678BB}|Domain\\Domain.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\peoplelistclean\\domain\\usecases\\peoplelistusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C62D2CE-31B2-4B60-A00A-695A336678BB}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\peoplelistusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C8BD930A-22F4-4713-893F-067A8EC1CA97}|EjercicioGuiado\\UI.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\peoplelistclean\\ejercicioguiado\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C8BD930A-22F4-4713-893F-067A8EC1CA97}|EjercicioGuiado\\UI.csproj|solutionrelative:ejercicioguiado\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C8BD930A-22F4-4713-893F-067A8EC1CA97}|EjercicioGuiado\\UI.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\peoplelistclean\\ejercicioguiado\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8BD930A-22F4-4713-893F-067A8EC1CA97}|EjercicioGuiado\\UI.csproj|solutionrelative:ejercicioguiado\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C62D2CE-31B2-4B60-A00A-695A336678BB}|Domain\\Domain.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\peoplelistclean\\domain\\usecases\\peoplelistusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C62D2CE-31B2-4B60-A00A-695A336678BB}|Domain\\Domain.csproj|solutionrelative:domain\\usecases\\peoplelistusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C62D2CE-31B2-4B60-A00A-695A336678BB}|Domain\\Domain.csproj|c:\\users\\usuario\\documents\\github\\sistemasdegesti-nempresarial\\unidad7\\peoplelistclean\\domain\\usecases\\interfaces\\ipeoplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\EjercicioGuiado\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "EjercicioGuiado\\Views\\Home\\Index.cshtml",
@@ -83,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\EjercicioGuiado\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "EjercicioGuiado\\Controllers\\HomeController.cs",
@@ -91,8 +91,7 @@
               "RelativeToolTip": "EjercicioGuiado\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:54:10.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:54:10.341Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "EjercicioGuiado\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:40:55.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:40:55.922Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "CompositionRoot\\DI.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAwA0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:39:52.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:39:52.815Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "Data\\Repositories\\PeopleRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:25:18.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:25:18.892Z"
             },
             {
               "$type": "Document",
@@ -143,18 +139,17 @@
               "RelativeToolTip": "Domain\\UseCases\\Interfaces\\IPeopleRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:24:55.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:24:55.023Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PeopleListUseCase.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\Domain\\UseCases\\PeopleListUseCase.cs",
               "RelativeDocumentMoniker": "Domain\\UseCases\\PeopleListUseCase.cs",
               "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\Domain\\UseCases\\PeopleListUseCase.cs",
               "RelativeToolTip": "Domain\\UseCases\\PeopleListUseCase.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwCkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-04T18:23:53.607Z",
               "EditorCaption": ""
@@ -169,8 +164,7 @@
               "RelativeToolTip": "Domain\\UseCases\\Interfaces\\IPeopleListUseCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:24:37.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:24:37.775Z"
             },
             {
               "$type": "Document",
@@ -182,8 +176,7 @@
               "RelativeToolTip": "Data\\Repositories\\PeopleRepositoryEmpty.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:25:50.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:25:50.492Z"
             },
             {
               "$type": "Document",
@@ -195,60 +188,55 @@
               "RelativeToolTip": "Domain\\Entities\\Persona.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T18:26:47.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:26:47.4Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "UI",
+              "Title": "UI.csproj",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\EjercicioGuiado\\UI.csproj",
               "RelativeDocumentMoniker": "EjercicioGuiado\\UI.csproj",
               "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\EjercicioGuiado\\UI.csproj",
               "RelativeToolTip": "EjercicioGuiado\\UI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-04T18:26:38.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:26:38.444Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "CompositionRoot",
+              "Title": "CompositionRoot.csproj",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\CompositionRoot\\CompositionRoot.csproj",
               "RelativeDocumentMoniker": "CompositionRoot\\CompositionRoot.csproj",
               "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\CompositionRoot\\CompositionRoot.csproj",
               "RelativeToolTip": "CompositionRoot\\CompositionRoot.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-04T18:18:16.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:18:16.683Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Data",
+              "Title": "Data.csproj",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\Data\\Data.csproj",
               "RelativeDocumentMoniker": "Data\\Data.csproj",
               "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\Data\\Data.csproj",
               "RelativeToolTip": "Data\\Data.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-04T18:18:47.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:18:47.567Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Domain",
+              "Title": "Domain.csproj",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\Domain\\Domain.csproj",
               "RelativeDocumentMoniker": "Domain\\Domain.csproj",
               "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\SistemasDeGesti-nEmpresarial\\Unidad7\\PeopleListClean\\Domain\\Domain.csproj",
               "RelativeToolTip": "Domain\\Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-04T18:18:25.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T18:18:25.808Z"
             }
           ]
         }
