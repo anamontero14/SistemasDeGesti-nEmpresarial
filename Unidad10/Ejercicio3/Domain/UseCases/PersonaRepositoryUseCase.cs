@@ -32,6 +32,14 @@ namespace Domain.UseCase
         #region MÉTODOS DE LA INTERFAZ
 
         /// <summary>
+        /// Método que devuelve una lista de todas las personas
+        /// </summary>
+        /// <returns></returns>
+        public List<Persona> getListaPersonas() { 
+            return _personaRepository.getListaPersonas();
+        }
+
+        /// <summary>
         /// Obtiene una lista de personas con el nombre de su departamento
         /// </summary>
         /// <returns>Lista de PersonaConNombreDepartamento</returns>

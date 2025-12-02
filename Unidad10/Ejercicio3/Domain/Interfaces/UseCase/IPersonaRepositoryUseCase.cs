@@ -15,12 +15,24 @@ namespace Domain.Interfaces.UseCase
     /// </summary>
     public interface IPersonaRepositoryUseCase
     {
+
+        /// <summary>
+        /// Método que devuelve una lista de todas las personas de la BBDD
+        /// </summary>
+        /// <returns></returns>
+        public List<Persona> getListaPersonas();
+
         /// <summary>
         /// Método que sirve para darle la lista de los DTO a el controlador
         /// </summary>
         /// <returns></returns>
         public List<PersonaConNombreDepartamento> getListaPersonasConNombreDepartamento();
 
+        /// <summary>
+        /// Método que devuelve una persona buscada por su id
+        /// </summary>
+        /// <param name="idPersona"></param>
+        /// <returns></returns>
         public Persona getPersonaPorId(int idPersona);
 
         /// <summary>
