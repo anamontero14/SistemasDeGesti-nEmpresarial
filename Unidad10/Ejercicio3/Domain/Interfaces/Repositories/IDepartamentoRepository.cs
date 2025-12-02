@@ -43,5 +43,13 @@ namespace Domain.Interfaces.Repositories
         /// <param name="idDepartamento"></param>
         /// <returns></returns>
         public int eliminarDepartamento(int idDepartamento);
+
+        /// <summary>
+        /// PRE: El id del departamento no puede ser nulo
+        /// Método que devuelve el número de personas que pertenecen a un departamento específico
+        /// </summary>
+        /// <param name="idDepartamento">ID del departamento a consultar</param>
+        /// <returns>Número de personas en el departamento</returns>
+        public int personaEnDepartamento(int idDepartamento);
     }
 }

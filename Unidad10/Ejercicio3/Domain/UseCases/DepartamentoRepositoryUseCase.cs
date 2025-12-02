@@ -11,8 +11,15 @@ namespace Domain.UseCases
 {
     public class DepartamentoRepositoryUseCase : IDepartamentoRepositoryUseCase
     {
+        /// <summary>
+        /// Atributo que servirá para acceder a los métodos del repostiroio de los departamentos
+        /// </summary>
         private readonly IDepartamentoRepository _repositorioDepartamentos;
 
+        /// <summary>
+        /// Inyección del departamento
+        /// </summary>
+        /// <param name="departamentoRepository"></param>
         public DepartamentoRepositoryUseCase(IDepartamentoRepository departamentoRepository) {
             _repositorioDepartamentos = departamentoRepository;
         }
@@ -33,15 +40,32 @@ namespace Domain.UseCases
             return _repositorioDepartamentos.actualizarDepartamento(idDepartamento, departamentoActualizado);
         }
 
-        //para eliminar un departamento
+        
+        /// <summary>
+        /// Método para eliminar un departamento atentdiendo al id que se le pasa
+        /// </summary>
+        /// <param name="idDepartamento"></param>
+        /// <returns>Un número de filas que han sido afectadas</returns>
         public int eliminarDepartamento(int idDepartamento) {
-            return _repositorioDepartamentos.eliminarDepartamento(idDepartamento);
-            //no se pueden eliminar departamentos que incluyan personas
+
+            if (_repositorioDepartamentos.personaEnDepartamento(idDepartamento) == 0)
+            {
+                return _repositorioDepartamentos.eliminarDepartamento(idDepartamento);
+            }
+            else {
+                throw new InvalidOperationException("No se puede eliminar el departamento porque tiene personas asignadas.");
+            }
         }
 
+        /// <summary>
+        /// Para seleccionar un departamento por ID
+        /// </summary>
+        /// <param name="idDepartamento"></param>
+        /// <returns></returns>
         public Departamento getDepartamentoPorId(int idDepartamento)
         {
-            throw new NotImplementedException();
+            Departamento departamentoEncontrado = _repositorioDepartamentos.getDepartamentoPorId(idDepartamento);
+            return departamentoEncontrado;
         }
         #endregion
     }

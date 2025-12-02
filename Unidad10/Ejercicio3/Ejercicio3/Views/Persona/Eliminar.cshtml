@@ -1,0 +1,18 @@
+﻿@model Domain.DTOs.PersonaConNombreDepartamento
+
+<h2>Eliminar Persona</h2>
+
+<div class="alert alert-warning">
+    <h4>¿Está seguro de que desea eliminar esta persona?</h4>
+    <p><strong>Nombre:</strong> @Model.persona.Nombre</p>
+    <p><strong>Apellidos:</strong> @Model.persona.Apellidos</p>
+    <p><strong>Departamento:</strong> @Model.nombreDepartamento</p>
+</div>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.persona.ID" />
+
+    <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+    <a href="@Url.Action("Mostrar")" class="btn btn-secondary">Cancelar</a>
+</form>

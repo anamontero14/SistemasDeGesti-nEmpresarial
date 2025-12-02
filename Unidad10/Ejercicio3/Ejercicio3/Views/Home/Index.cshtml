@@ -1,2 +1,36 @@
-﻿<h1>Vista index</h1>
-@Html.ActionLink("Ir a Personas", "Mostrar", "Persona")
+﻿<div class="container mt-5">
+    <h1 class="text-center mb-4">Vista Index</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+
+                    <h4 class="card-title mb-4">Navegación</h4>
+
+                    <div class="d-flex flex-column gap-3">
+
+                        @Html.ActionLink(
+                            "Ir a Personas",
+                            "Mostrar",
+                            "Persona",
+                            null,
+                            new { @class = "btn btn-primary btn-lg" }
+                        )
+
+                        @Html.ActionLink(
+                            "Ir a Departamentos",
+                            "Mostrar",
+                            "Departamento",
+                            null,
+                            new { @class = "btn btn-secondary btn-lg" }
+                        )
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

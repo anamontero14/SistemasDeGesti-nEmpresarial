@@ -25,6 +25,9 @@ namespace Domain.DTOs
             departamentos = listadoDepartamentos;
         }
         
+        /// <summary>
+        /// Constructor vacío
+        /// </summary>
         public PersonaConListadoDepartamento() { 
             persona = new Persona();
             departamentos = new List<Departamento>();

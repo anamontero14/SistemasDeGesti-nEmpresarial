@@ -2,8 +2,6 @@
 using Domain.Entities;
 using Domain.Interfaces.Repositories;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
 
 namespace Data.Repositories.RepositoriosDepartamentos
 {
@@ -237,6 +235,52 @@ namespace Data.Repositories.RepositoriosDepartamentos
             return numeroFilasAfectadas;
         }
 
+        /// <summary>
+        /// PRE: El id del departamento no puede ser nulo
+        /// Método que devuelve el número de personas que pertenecen a un departamento específico
+        /// </summary>
+        /// <param name="idDepartamento">ID del departamento a consultar</param>
+        /// <returns>Número de personas en el departamento</returns>
+        public int personaEnDepartamento(int idDepartamento)
+        {
+            int numeroPersonas = 0;
+            SqlConnection miConexion = null;
+            SqlCommand miComando = null;
+            SqlDataReader miLector = null;
+            Connection connection = new Connection();
+
+            try
+            {
+                miConexion = connection.getConnection();
+
+                miComando = new SqlCommand();
+                miComando.CommandText = "SELECT COUNT(*) FROM Personas WHERE IDDepartamento = @IDDepartamento";
+                miComando.Connection = miConexion;
+                miComando.Parameters.AddWithValue("@IDDepartamento", idDepartamento);
+
+                miLector = miComando.ExecuteReader();
+
+                if (miLector.Read())
+                {
+                    numeroPersonas = (int)miLector[0];
+                }
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (miLector != null) miLector.Close();
+                if (miConexion != null) connection.closeConnection(ref miConexion);
+            }
+
+            return numeroPersonas;
+        }
         #endregion
     }
 }
