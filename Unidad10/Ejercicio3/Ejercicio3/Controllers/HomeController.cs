@@ -14,13 +14,7 @@ namespace Ejercicio3.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index([FromServices] IPersonaRepositoryUseCase casoDeUso)
-        {
-            return View(casoDeUso.getListaPersonas());
-        }
-
-        //devuelve la vista detalles
-        public IActionResult Details(int id)
+        public IActionResult Index()
         {
             return View();
         }

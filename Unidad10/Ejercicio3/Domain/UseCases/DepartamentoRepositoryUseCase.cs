@@ -18,7 +18,6 @@ namespace Domain.UseCases
         }
 
         #region MÉTODOS
-
         //para la vista del listado
         public List<Departamento> getListaDepartamento() { 
             return _repositorioDepartamentos.getListaDepartamentos();
@@ -38,6 +37,11 @@ namespace Domain.UseCases
         public int eliminarDepartamento(int idDepartamento) {
             return _repositorioDepartamentos.eliminarDepartamento(idDepartamento);
             //no se pueden eliminar departamentos que incluyan personas
+        }
+
+        public Departamento getDepartamentoPorId(int idDepartamento)
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }

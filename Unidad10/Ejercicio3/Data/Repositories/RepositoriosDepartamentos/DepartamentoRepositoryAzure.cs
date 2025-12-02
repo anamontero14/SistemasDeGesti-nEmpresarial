@@ -4,229 +4,239 @@ using Domain.Interfaces.Repositories;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Data.Repositories.RepositoriosDepartamentos
 {
     public class DepartamentoRepositoryAzure : IDepartamentoRepository
     {
+        #region MÉTODOS CRUD
+
         /// <summary>
         /// Método que devuelve una lista de todos los departamentos de la BBDD
         /// </summary>
-        /// <returns></returns>
-        public List<Departamento> getListaDepartamentos() {
-            SqlConnection miConexion = new SqlConnection();
-
+        /// <returns>Lista de departamentos</returns>
+        public List<Departamento> getListaDepartamentos()
+        {
             List<Departamento> listadoDepartamentos = new List<Departamento>();
-
-            SqlCommand miComando = new SqlCommand();
-
-            SqlDataReader miLector;
-
-            Departamento oDepartamento;
-
-            miConexion.ConnectionString = Connection.getConnectionString();
+            SqlConnection miConexion = null;
+            SqlCommand miComando = null;
+            SqlDataReader miLector = null;
+            Connection connection = new Connection();
 
             try
             {
+                miConexion = connection.getConnection();
 
-                miConexion.Open();
-
-                //Creamos el comando (Creamos el comando, le pasamos la sentencia y la conexion, y lo ejecutamos)
-
-                miComando.CommandText = "SELECT * FROM Departamentos";
-
+                miComando = new SqlCommand();
+                miComando.CommandText = "SELECT ID, Nombre FROM Departamentos";
                 miComando.Connection = miConexion;
 
                 miLector = miComando.ExecuteReader();
-                //Si hay lineas en el lector
 
                 if (miLector.HasRows)
                 {
-
                     while (miLector.Read())
-
                     {
-                        oDepartamento = new Departamento();
+                        Departamento oDepartamento = new Departamento();
 
                         oDepartamento.ID = (int)miLector["ID"];
-
                         oDepartamento.Nombre = (string)miLector["Nombre"];
 
-                        //Si sospechamos que el campo puede ser Null en la BBDD
-
                         listadoDepartamentos.Add(oDepartamento);
-
                     }
-
                 }
-
-                miLector.Close();
-
-                miConexion.Close();
-
             }
-
-            catch (SqlException exSql)
+            catch (SqlException)
             {
-
-                throw exSql;
-
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (miLector != null) miLector.Close();
+                if (miConexion != null) connection.closeConnection(ref miConexion);
             }
 
             return listadoDepartamentos;
         }
 
         /// <summary>
+        /// PRE: El id del departamento no puede ser nulo
         /// Método que devuelve un departamento en específico
         /// </summary>
-        /// <param name="idDepartamento"></param>
-        /// <returns></returns>
-        public Departamento getDepartamentoPorId(int idDepartamento) {
-            //Departamento que se devuelve en el return
-            Departamento? departamentoGetByID = null;
+        /// <param name="idDepartamento">ID del departamento a buscar</param>
+        /// <returns>Departamento encontrado o null si no existe</returns>
+        public Departamento getDepartamentoPorId(int idDepartamento)
+        {
+            Departamento departamentoGetByID = null;
+            SqlConnection miConexion = null;
+            SqlCommand miComando = null;
+            SqlDataReader miLector = null;
+            Connection connection = new Connection();
 
-            //variable que almacena todo el listado de las Departamentos
-            List<Departamento> listaDeDepartamentos = getListaDepartamentos();
-
-            //recorro la lista de las Departamentos
-            foreach (Departamento departamento in listaDeDepartamentos)
+            try
             {
-                //comprueba si el id de la Departamento actual es igual al que entra por parámetros
-                if (departamento.ID == idDepartamento)
+                miConexion = connection.getConnection();
+
+                miComando = new SqlCommand();
+                miComando.CommandText = "SELECT ID, Nombre FROM Departamentos WHERE ID = @ID";
+                miComando.Connection = miConexion;
+                miComando.Parameters.AddWithValue("@ID", idDepartamento);
+
+                miLector = miComando.ExecuteReader();
+
+                if (miLector.Read())
                 {
-                    //se iguala la variable a la Departamento actual
-                    departamentoGetByID = departamento;
+                    departamentoGetByID = new Departamento();
+
+                    departamentoGetByID.ID = (int)miLector["ID"];
+                    departamentoGetByID.Nombre = (string)miLector["Nombre"];
                 }
             }
-            //deuelvo la Departamento con el mismo id
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (miLector != null) miLector.Close();
+                if (miConexion != null) connection.closeConnection(ref miConexion);
+            }
+
             return departamentoGetByID;
         }
 
         /// <summary>
+        /// PRE: El departamento nuevo no puede ser nulo
         /// Método que crea un nuevo departamento en la BBDD
         /// </summary>
-        /// <param name="departamentoNuevo"></param>
-        /// <returns></returns>
-        public int crearDepartamento(Departamento departamentoNuevo) {
-            //almacena las filas afectadas por la sentencia sql
-            int filasAfectadas = -1;
-
-            SqlConnection miConexion = new SqlConnection();
-
-            SqlCommand miComando = new SqlCommand();
-
-            miConexion.ConnectionString = Connection.getConnectionString();
+        /// <param name="departamentoNuevo">Departamento a insertar</param>
+        /// <returns>Número de filas afectadas</returns>
+        public int crearDepartamento(Departamento departamentoNuevo)
+        {
+            int filasAfectadas = 0;
+            SqlConnection miConexion = null;
+            SqlCommand miComando = null;
+            Connection connection = new Connection();
 
             try
             {
+                miConexion = connection.getConnection();
 
-                miConexion.Open();
+                miComando = new SqlCommand();
+                miComando.CommandText = "INSERT INTO Departamentos (Nombre) VALUES (@Nombre)";
+                miComando.Connection = miConexion;
 
-                miComando.CommandText = "INSERT INTO Departamentos (ID, Nombre) VALUES (@ID, @Nombre)";
-
-                miComando.Parameters.AddWithValue("@ID", departamentoNuevo.ID);
                 miComando.Parameters.AddWithValue("@Nombre", departamentoNuevo.Nombre);
 
                 filasAfectadas = miComando.ExecuteNonQuery();
-
-                miConexion.Open();
-
             }
-
-            catch (SqlException exSql)
+            catch (SqlException)
             {
-                throw exSql;
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (miConexion != null) connection.closeConnection(ref miConexion);
             }
 
-            //se devuelve la validez
             return filasAfectadas;
         }
 
         /// <summary>
-        /// Método que actualiza un departamento en específico de la BBBDD
+        /// PRE: El id del departamento y el departamento no pueden ser nulos
+        /// Método que actualiza un departamento en específico de la BBDD
         /// </summary>
-        /// <param name="idDepartamento"></param>
-        /// <param name="departamento"></param>
-        /// <returns></returns>
-        public int actualizarDepartamento(int idDepartamento, Departamento departamento) {
-            //almacena las filas afectadas por la sentencia sql
-            int filasAfectadas = -1;
-
-            SqlConnection miConexion = new SqlConnection();
-
-            SqlCommand miComando = new SqlCommand();
-
-            miConexion.ConnectionString = Connection.getConnectionString();
+        /// <param name="idDepartamento">ID del departamento a actualizar</param>
+        /// <param name="departamento">Objeto departamento con los nuevos datos</param>
+        /// <returns>Número de filas afectadas</returns>
+        public int actualizarDepartamento(int idDepartamento, Departamento departamento)
+        {
+            int filasAfectadas = 0;
+            SqlConnection miConexion = null;
+            SqlCommand miComando = null;
+            Connection connection = new Connection();
 
             try
             {
+                miConexion = connection.getConnection();
 
-                miConexion.Open();
+                miComando = new SqlCommand();
+                miComando.CommandText = "UPDATE Departamentos SET Nombre = @Nombre WHERE ID = @ID";
+                miComando.Connection = miConexion;
 
-                miComando.CommandText = "UPDATE Departamentos SET " +
-                "ID = @ID, " +
-                "Nombre = @Nombre, " +
-                "WHERE ID = @IDDepartamento";
-
-                // Parámetros
-                miComando.Parameters.AddWithValue("@IDDepartamento", idDepartamento);
-                miComando.Parameters.AddWithValue("@ID", departamento.ID);
+                miComando.Parameters.AddWithValue("@ID", idDepartamento);
                 miComando.Parameters.AddWithValue("@Nombre", departamento.Nombre);
 
                 filasAfectadas = miComando.ExecuteNonQuery();
-
-                miConexion.Open();
-
             }
-
-            catch (SqlException exSql)
+            catch (SqlException)
             {
-                throw exSql;
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (miConexion != null) connection.closeConnection(ref miConexion);
             }
 
-            //se devuelven las filas que han sido afectadas
             return filasAfectadas;
         }
 
         /// <summary>
+        /// PRE: El id del departamento no puede ser nulo
         /// Método que elimina un departamento
         /// </summary>
-        /// <param name="idDepartamento"></param>
-        /// <returns></returns>
-        public int eliminarDepartamento(int idDepartamento) {
+        /// <param name="idDepartamento">ID del departamento a eliminar</param>
+        /// <returns>Número de filas afectadas</returns>
+        public int eliminarDepartamento(int idDepartamento)
+        {
             int numeroFilasAfectadas = 0;
-
-            SqlConnection miConexion = new SqlConnection();
-
-            SqlCommand miComando = new SqlCommand();
-
-            miConexion.ConnectionString = ("server=localhost;database=nombreBBDD;uid=prueba;pwd=123;server=107-03\\SQLEXPRESS;database=PERSONAS;uid=prueba; pwd = 123; TrustServerCertificate = true;");
-
-            miComando.Parameters.Add("@ID", System.Data.SqlDbType.Int).Value = idDepartamento;
+            SqlConnection miConexion = null;
+            SqlCommand miComando = null;
+            Connection connection = new Connection();
 
             try
             {
+                miConexion = connection.getConnection();
 
-                miConexion.Open();
-
-                miComando.CommandText = "DELETE FROM Departamentos WHERE IDDepartamento=@id";
-
+                miComando = new SqlCommand();
+                miComando.CommandText = "DELETE FROM Departamentos WHERE ID = @ID";
                 miComando.Connection = miConexion;
+                miComando.Parameters.AddWithValue("@ID", idDepartamento);
 
                 numeroFilasAfectadas = miComando.ExecuteNonQuery();
-
             }
-
-            catch (Exception ex)
-
+            catch (SqlException)
             {
-                throw ex;
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (miConexion != null) connection.closeConnection(ref miConexion);
             }
 
             return numeroFilasAfectadas;
         }
+
+        #endregion
     }
 }

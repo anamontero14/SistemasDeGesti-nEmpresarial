@@ -11,9 +11,9 @@ namespace Domain.DTOs
     public class PersonaConListadoDepartamento
     {
         //persona
-        public Persona persona { get; }
+        public Persona persona { get; set; }
         //listado de los departamentos
-        public List<Departamento> departamentos { get; }
+        public List<Departamento> departamentos { get; set; }
 
         /// <summary>
         /// Constructor del DTO que asigna valores a los atributos
@@ -23,6 +23,11 @@ namespace Domain.DTOs
         public PersonaConListadoDepartamento(Persona persona, List<Departamento> listadoDepartamentos) {
             this.persona = persona;
             departamentos = listadoDepartamentos;
+        }
+        
+        public PersonaConListadoDepartamento() { 
+            persona = new Persona();
+            departamentos = new List<Departamento>();
         }
     }
 }

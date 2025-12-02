@@ -9,8 +9,8 @@ namespace Domain.DTOs
 {
     public class PersonaConNombreDepartamento
     {
-        public Persona persona { get; }
-        public string nombreDepartamento { get; }
+        public Persona persona { get; set; }
+        public string nombreDepartamento { get; set; }
 
         /// <summary>
         /// Constructor del DTO que le asigna a los atributos los parámetros que le pasa 
@@ -21,6 +21,14 @@ namespace Domain.DTOs
         public PersonaConNombreDepartamento(Persona persona, string nombreDepartamento) { 
             this.persona = persona;
             this.nombreDepartamento = nombreDepartamento;
+        }
+
+        /// <summary>
+        /// Constructor vacío
+        /// </summary>
+        public PersonaConNombreDepartamento() { 
+            persona = new Persona();
+            nombreDepartamento = "";
         }
     }
 }

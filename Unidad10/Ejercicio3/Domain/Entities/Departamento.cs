@@ -27,7 +27,10 @@ namespace Domain.Entities
         /// <summary>
         /// Constructor vacío
         /// </summary>
-        public Departamento() { }
+        public Departamento() {
+            _id = 0;
+            _nombre = "";
+        }
         #endregion
 
         #region GETTERS Y SETTERS

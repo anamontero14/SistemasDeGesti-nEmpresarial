@@ -21,13 +21,15 @@ namespace Domain.Interfaces.UseCase
         /// <returns></returns>
         public List<PersonaConNombreDepartamento> getListaPersonasConNombreDepartamento();
 
+        public Persona getPersonaPorId(int idPersona);
+
         /// <summary>
         /// Método
         /// </summary>
         /// <returns></returns>
         public PersonaConListadoDepartamento getPersonaConListadoDepartamento(Persona persona);
 
-        public PersonaConNombreDepartamento getPersonaConNombreDepartamento(Persona personaEspecifica);
+        public PersonaConNombreDepartamento getPersonaConNombreDepartamento(int idPersona);
 
         public int crearPersona(Persona personaNueva);
 

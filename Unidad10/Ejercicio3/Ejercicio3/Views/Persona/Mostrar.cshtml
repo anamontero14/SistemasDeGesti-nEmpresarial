@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Domain.DTOs.PersonaConNombreDepartamento>
+
+@{
+    ViewData["Title"] = "Mostrar";
+}
+
+<h1>Mostrar</h1>
+
+<p>
+    <a asp-action="Crear">Crear nueva persona</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.persona.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.persona.Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.persona.FechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombreDepartamento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.persona.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.persona.Apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.persona.FechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombreDepartamento)
+            </td>
+            <td>
+                    @Html.ActionLink("Editar", "Editar", new { id = item.persona.ID }) |
+                    @Html.ActionLink("Detalles", "Detalle", new { id = item.persona.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.persona.ID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

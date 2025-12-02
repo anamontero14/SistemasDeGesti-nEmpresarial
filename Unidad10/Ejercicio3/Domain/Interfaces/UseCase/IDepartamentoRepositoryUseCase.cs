@@ -11,6 +11,8 @@ namespace Domain.Interfaces.UseCase
     {
         public List<Departamento> getListaDepartamento();
 
+        public Departamento getDepartamentoPorId(int idDepartamento);
+
         public int crearDepartamento(Departamento departamentoNuevo);
 
         public int actualizarDepartamento(int idDepartamento, Departamento departamentoActualizado);
