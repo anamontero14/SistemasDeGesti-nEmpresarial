@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.DTOs;
+using Domain.Entities;
 using Domain.Interfaces.UseCase;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,8 +31,7 @@ namespace UI.API
 
             try
             {
-
-                listadoCompleto = _casoDeUsoPersona.get;
+                listadoCompleto = _casoDeUsoPersona.getListaPersonas();
                 if (listadoCompleto.Count() == 0)
                 {
                     salida = NoContent();
@@ -49,29 +49,86 @@ namespace UI.API
 
         }
 
-        // GET api/<PersonaController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
         // POST api/<PersonaController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post(Persona persona)
         {
+            IActionResult salida;
+            int numFilasAfectadas = 0;
+
+            try
+            {
+                numFilasAfectadas = _casoDeUsoPersona.crearPersona(persona);
+                if (numFilasAfectadas == 0)
+                {
+                    salida = NotFound();
+                }
+                else
+                {
+                    salida = Ok();
+                }
+            }
+            catch (Exception e)
+            {
+                salida = BadRequest();
+            }
+
+            return salida;
         }
 
         // PUT api/<PersonaController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put(int id, Persona persona)
         {
+            IActionResult salida;
+            int numFilasAfectadas = 0;
+
+            try
+            {
+                numFilasAfectadas = _casoDeUsoPersona.actualizarPersona(id, persona);
+                if (numFilasAfectadas == 0)
+                {
+                    salida = NotFound();
+                }
+                else
+                {
+                    salida = Ok();
+                }
+            }
+            catch (Exception e)
+            {
+                salida = BadRequest();
+            }
+
+            return salida;
         }
 
         // DELETE api/<PersonaController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            IActionResult salida;
+            int numFilasAfectadas = 0;
+
+            try
+            {
+                numFilasAfectadas = _casoDeUsoPersona.eliminarPersona(id);
+                if (numFilasAfectadas == 0)
+                {
+                    salida = NotFound();
+                }
+                else
+                {
+                    salida = Ok();
+                }
+            }
+            catch (Exception e)
+            {
+                salida = BadRequest();
+            }
+
+            return salida;
         }
+
     }
 }
