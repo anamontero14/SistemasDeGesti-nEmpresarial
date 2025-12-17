@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Entities
 {
+    [Table("Personas")]
     public class Persona
     {
         #region ATRIBUTOS PRIVADOS
-
         private int _id;
         private string _nombre;
         private string _apellidos;
@@ -19,9 +21,9 @@ namespace Domain.Entities
         private string _telefono;
         private int _idDepartamento;
         private string _foto;
-
         #endregion
 
+        #region CONSTRUCTOR
         /// <summary>
         /// Constructor de la clase persona con todos sus atributos
         /// </summary>
@@ -29,7 +31,8 @@ namespace Domain.Entities
         /// <param name="nombre"></param>
         /// <param name="apellidos"></param>
         /// <param name="edad"></param>
-        public Persona(int id, string nombre, string apellidos, int edad, DateTime fechaNacimiento, string direccion, string telefono, int idDepartamento, string foto) { 
+        public Persona(int id, string nombre, string apellidos, int edad, DateTime fechaNacimiento, string direccion, string telefono, int idDepartamento, string foto)
+        {
             _id = id;
             _nombre = nombre;
             _apellidos = apellidos;
@@ -40,11 +43,11 @@ namespace Domain.Entities
             _idDepartamento = idDepartamento;
             _foto = foto;
         }
-
         /// <summary>
         /// Constructor de la clase persona vacío
         /// </summary>
-        public Persona() {
+        public Persona()
+        {
             _id = 0;
             _nombre = "";
             _apellidos = "";
@@ -54,56 +57,82 @@ namespace Domain.Entities
             _idDepartamento = 0;
             _foto = "";
         }
+        #endregion
 
         #region GETTERS Y SETTERS
-
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column("ID")]
         public int ID
         {
             get
             {
                 return _id;
             }
-            set {
+            set
+            {
                 _id = value;
             }
         }
 
-        public string Nombre {
-            get {
+        [Required]
+        [StringLength(30)]
+        [Column("Nombre")]
+        public string Nombre
+        {
+            get
+            {
                 return _nombre;
             }
-            set {
+            set
+            {
                 _nombre = value;
             }
         }
 
-        public string Apellidos {
-            get {
+        [Required]
+        [StringLength(60)]
+        [Column("Apellidos")]
+        public string Apellidos
+        {
+            get
+            {
                 return _apellidos;
             }
-            set { 
+            set
+            {
                 _apellidos = value;
             }
         }
 
-        public int Edad {
-            get {
+        [NotMapped]
+        public int Edad
+        {
+            get
+            {
                 return _edad;
             }
-            set { 
+            set
+            {
                 _edad = value;
             }
         }
 
-        public DateTime FechaNacimiento {
-            get {
+        [Column("FechaNacimiento")]
+        public DateTime FechaNacimiento
+        {
+            get
+            {
                 return _fechaNacimiento;
             }
-            set { 
-                _fechaNacimiento = value;  
+            set
+            {
+                _fechaNacimiento = value;
             }
         }
 
+        [StringLength(60)]
+        [Column("Direccion")]
         public string Direccion
         {
             get
@@ -116,6 +145,8 @@ namespace Domain.Entities
             }
         }
 
+        [StringLength(15)]
+        [Column("Telefono")]
         public string Telefono
         {
             get
@@ -128,6 +159,8 @@ namespace Domain.Entities
             }
         }
 
+        [StringLength(255)]
+        [Column("Foto")]
         public string Foto
         {
             get
@@ -140,6 +173,9 @@ namespace Domain.Entities
             }
         }
 
+        [Required]
+        [Column("IDDepartamento")]
+        [ForeignKey("Departamento")]
         public int IDDepartamento
         {
             get
