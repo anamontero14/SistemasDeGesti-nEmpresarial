@@ -8,7 +8,6 @@ namespace Data.Repositories.RepositoriosPersona
     public class PersonasRepositoryAzure : IPersonaRepository
     {
         #region MÉTODOS CRUD
-
         /// <summary>
         /// Método que obtiene una lista de todas las personas de la BBDD
         /// </summary>
@@ -277,7 +276,6 @@ namespace Data.Repositories.RepositoriosPersona
 
             return numeroFilasAfectadas;
         }
-
         #endregion
     }
 }

@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Entities
 {
+    [Table("Departamentos")]
     public class Departamento
     {
         #region ATRIBUTOS
@@ -19,21 +22,25 @@ namespace Domain.Entities
         /// </summary>
         /// <param name="id"></param>
         /// <param name="nombre"></param>
-        public Departamento(int id, string nombre) { 
+        public Departamento(int id, string nombre)
+        {
             _id = id;
             _nombre = nombre;
         }
-
         /// <summary>
         /// Constructor vacío
         /// </summary>
-        public Departamento() {
+        public Departamento()
+        {
             _id = 0;
             _nombre = "";
         }
         #endregion
 
         #region GETTERS Y SETTERS
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column("ID")]
         public int ID
         {
             get
@@ -46,6 +53,9 @@ namespace Domain.Entities
             }
         }
 
+        [Required]
+        [StringLength(30)]
+        [Column("Nombre")]
         public string Nombre
         {
             get

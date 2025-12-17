@@ -53,7 +53,6 @@ namespace Data.DataBase
         #endregion
         
         #region METODOS
-
         /// <summary>
         /// Método que abre una conexión con la base de datos
         /// </summary>
