@@ -1,0 +1,310 @@
+﻿@model List<UI.Models.PersonaConListaDepartamentosYColor>
+
+@{
+    ViewData["Title"] = "Juego de Adivinar Departamentos";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .instrucciones {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #667eea;
+        }
+
+            .instrucciones h3 {
+                color: #667eea;
+                margin-bottom: 10px;
+            }
+
+            .instrucciones p {
+                color: #555;
+                line-height: 1.6;
+            }
+
+        .mensaje {
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+            .mensaje.victoria {
+                background: #d4edda;
+                color: #155724;
+                border: 2px solid #c3e6cb;
+            }
+
+            .mensaje.intento {
+                background: #fff3cd;
+                color: #856404;
+                border: 2px solid #ffeeba;
+            }
+
+        @@keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tbody tr {
+            transition: all 0.3s ease;
+        }
+
+            tbody tr:hover {
+                transform: scale(1.02);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            select:hover {
+                border-color: #667eea;
+            }
+
+            select:focus {
+                outline: none;
+                border-color: #667eea;
+                box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 50px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+            .btn-primary:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+            }
+
+            .btn-primary:active {
+                transform: translateY(-1px);
+            }
+
+        .pista {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #2196F3;
+        }
+
+            .pista strong {
+                color: #2196F3;
+            }
+
+        @@media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Juego de Adivinar Departamentos</h1>
+
+        <div class="instrucciones">
+            <h3>📋 Instrucciones:</h3>
+            <p>
+                Selecciona el departamento correcto para cada persona de la lista.
+                Las filas del mismo color pertenecen al mismo departamento.
+                Cuando hayas completado todas las selecciones, pulsa el botón "Comprobar".
+            </p>
+        </div>
+
+        <div class="pista">
+            <strong>💡 Pista:</strong> Las personas del mismo departamento tienen el mismo color de fondo en la tabla.
+        </div>
+
+        @if (ViewBag.Mensaje != null)
+        {
+            <div class="mensaje @(ViewBag.EsVictoria == true ? "victoria" : "intento")">
+                @ViewBag.Mensaje
+            </div>
+        }
+
+        <form method="post" asp-action="Index" asp-controller="Home">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Departamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        for (int i = 0; i < Model.Count; i++)
+                        {
+                            <tr style="background-color: @Model[i].Color;">
+                                <td>
+                                    @Model[i].NombrePersona
+                                    <input type="hidden" name="[@i].NombrePersona" value="@Model[i].NombrePersona" />
+                                    <input type="hidden" name="[@i].ApellidosPersona" value="@Model[i].ApellidosPersona" />
+                                    <input type="hidden" name="[@i].Color" value="@Model[i].Color" />
+                                    <input type="hidden" name="[@i].IdDepartamentoReal" value="@Model[i].IdDepartamentoReal" />
+                                </td>
+                                <td>@Model[i].ApellidosPersona</td>
+                                <td>
+                                    <select name="[@i].IdDepartamentoGuess" required>
+                                        <option value="">-- Selecciona un departamento --</option>
+                                        @if (Model[i].ListadoDepartamentos != null)
+                                        {
+                                            foreach (var departamento in Model[i].ListadoDepartamentos)
+                                            {
+                                                if (Model[i].IdDepartamentoGuess == departamento.ID)
+                                                {
+                                                    <option value="@departamento.ID" selected>@departamento.Nombre</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@departamento.ID">@departamento.Nombre</option>
+                                                }
+                                            }
+                                        }
+                                    </select>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3" style="text-align: center; padding: 30px;">
+                                <p style="color: #999;">No hay personas disponibles para jugar.</p>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            @if (Model != null && Model.Any())
+            {
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-primary">✓ Comprobar Respuestas</button>
+                </div>
+            }
+        </form>
+    </div>
+</body>
+</html>

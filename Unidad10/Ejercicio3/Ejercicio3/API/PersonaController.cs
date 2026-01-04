@@ -13,13 +13,10 @@ namespace UI.API
     public class PersonaController : ControllerBase
     {
         private readonly IPersonaRepositoryUseCase _casoDeUsoPersona;
-        private readonly IDepartamentoRepositoryUseCase _casoDeUsoDepartamento;
 
-        public PersonaController(IPersonaRepositoryUseCase casoDeUsoP,
-            IDepartamentoRepositoryUseCase casoDeUsoD)
+        public PersonaController(IPersonaRepositoryUseCase casoDeUsoP)
         {
             _casoDeUsoPersona = casoDeUsoP;
-            _casoDeUsoDepartamento = casoDeUsoD;
         }
 
         // GET: api/<PersonasController>
@@ -48,6 +45,35 @@ namespace UI.API
             return salida;
 
         }
+
+        // GET api/<PersonaController>/5
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            IActionResult salida;
+            Persona persona;
+
+            try
+            {
+                persona = _casoDeUsoPersona.getPersonaPorId(id);
+
+                if (persona == null)
+                {
+                    salida = NotFound();
+                }
+                else
+                {
+                    salida = Ok(persona);
+                }
+            }
+            catch (Exception e)
+            {
+                salida = BadRequest();
+            }
+
+            return salida;
+        }
+
 
         // POST api/<PersonaController>
         [HttpPost]
