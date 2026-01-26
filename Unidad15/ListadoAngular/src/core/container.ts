@@ -13,7 +13,7 @@ import { IRepositoryPersonas } from "../domain/interfaces/repositories/IReposito
 import { PersonaUseCase } from "../domain/usecases/UseCasePersona";
 import { IUseCasePersonas } from "../domain/interfaces/usecases/IUseCasePersonas";
 // ViewModels
-import { PeopleListVM } from "../ui/viewmodel/PeopleListVM";
+import { PeopleListVM } from "../presentation/viewmodels/PeopleListVM";
 
 const container = new Container();
 
