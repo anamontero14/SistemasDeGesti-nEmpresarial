@@ -1,95 +1,103 @@
-/**
- * Clase que contendrá la definición de una persona y
- * los atributos que deberá tener
- */
+// src/domain/entities/Persona.ts
+
 export class Persona {
+  private readonly _ID: number;
+  private _Nombre: string;
+  private _Apellidos: string;
+  private _Telefono: string;
+  private _Direccion?: string | null;
+  private _Foto?: string | null;
+  private _FechaNacimiento?: Date | null;
+  private _IDDepartamento: number;
 
-    //#region ATRIBUTOS PRIVADOS
-    private _id: number
-    private _nombre: string
-    private _apellido: string
-    private _edad: number
-    private _fechaNacimiento: Date
-    private _direccion: string
-    private _telefono: string
-    private _idDepartamento: number
-    private _foto: string
-    //#endregion
+  constructor(
+    ID: number,
+    Nombre: string,
+    Apellidos: string,
+    Telefono: string,
+    IDDepartamento: number,
+    Direccion?: string | null,
+    Foto?: string | null,
+    FechaNacimiento?: Date | null
+  ) {
+    this._ID = ID;
+    this._Nombre = Nombre;
+    this._Apellidos = Apellidos;
+    this._Telefono = Telefono;
+    this._Direccion = Direccion ?? null; 
+    this._Foto = Foto ?? null; 
+    this._FechaNacimiento = FechaNacimiento ?? null;
+    this._IDDepartamento = IDDepartamento;
+  }
 
-    //#region CONSTRUCTOR CON TODOS LOS ATRIBUTOS
-    constructor(id: number, nombre: string, apellido: string, edad: number, fechaNacimiento: Date, direccion: string, telefono: string, idDepartamento: number, foto: string) {
-        this._id = id
-        this._nombre = nombre
-        this._apellido = apellido
-        this._edad = edad
-        this._fechaNacimiento = fechaNacimiento
-        this._direccion = direccion
-        this._telefono = telefono
-        this._idDepartamento = idDepartamento
-        this._foto = foto
-    }
-    //#endregion
+  get ID(): number {
+    return this._ID;
+  }
 
-    //#region GETTERS/SETTERS
-    get id() {
-        return this._id
-    }
+  get Nombre(): string {
+    return this._Nombre;
+  }
 
-    get nombre() {
-        return this._nombre
-    }
-    set nombre(value: string) {
-        this._nombre = value
-    }
+  set Nombre(value: string) {
+    this._Nombre = value;
+  }
 
-    get apellido() {
-        return this._apellido
-    }
-    set apellido(value: string) {
-        this._apellido = value
-    }
+  get Apellidos(): string {
+    return this._Apellidos;
+  }
 
-    get edad() {
-        return this._edad
-    }
-    set edad(value: number) {
-        this._edad = value
-    }
+  set Apellidos(value: string) {
+    this._Apellidos = value;
+  }
 
-    get fechaNacimiento() {
-        return this._fechaNacimiento
-    }
-    set fechaNacimiento(value: Date) {
-        this._fechaNacimiento = value
-    }
+  get Telefono(): string {
+    return this._Telefono;
+  }
 
-    get direccion() {
-        return this._direccion
-    }
-    set direccion(value: string) {
-        this._direccion = value
-    }
+  set Telefono(value: string) {
+    this._Telefono = value;
+  }
 
-    get telefono() {
-        return this._telefono
-    }
-    set telefono(value: string) {
-        this._telefono = value
-    }
+  get Direccion(): string {
+    return this._Direccion ?? "";
+  }
 
-    get idDepartamento() {
-        return this._idDepartamento
-    }
-    set idDepartamento(value: number) {
-        this._idDepartamento = value
-    }
+  set Direccion(value: string) {
+    this._Direccion = value;
+  }
 
-    get foto() {
-        return this._foto
-    }
-    set foto(value: string) {
-        this._foto = value
-    }
-    //#endregion
+  get Foto(): string {
+    return this._Foto ?? "";
+  }
 
+  set Foto(value: string) {
+    this._Foto = value;
+  }
+
+  get FechaNacimiento(): Date | null {
+    return this._FechaNacimiento ?? null;
+  }
+
+  set FechaNacimiento(value: Date) {
+    this._FechaNacimiento = value;
+  }
+
+  get IDDepartamento(): number {
+    return this._IDDepartamento;
+  }
+
+  set IDDepartamento(value: number) {
+    this._IDDepartamento = value;
+  }
+
+  get Edad(): number {
+    if (!this._FechaNacimiento) return 0;
+    const hoy = new Date();
+    let edad = hoy.getFullYear() - this._FechaNacimiento.getFullYear();
+    const mes = hoy.getMonth() - this._FechaNacimiento.getMonth();
+    if (mes < 0 || (mes === 0 && hoy.getDate() < this._FechaNacimiento.getDate())) {
+      edad--;
+    }
+    return edad;
+  }
 }

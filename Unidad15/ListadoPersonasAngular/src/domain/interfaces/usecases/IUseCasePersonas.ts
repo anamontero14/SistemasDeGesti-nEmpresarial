@@ -9,4 +9,10 @@ export interface IUseCasePersonas {
      * Devuelve la lista completa de personas
      */
     getListadoCompletoPersonas(): Persona[];
+
+    /**
+     * Devuelve la persona seleccionada por el id
+     * @param id 
+     */
+    getPersonaSeleccionada(id: number): Persona | undefined;
 }
